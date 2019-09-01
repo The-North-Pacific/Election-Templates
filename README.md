@@ -6,7 +6,7 @@ Templates for TNP Elections
 In all the below templates, a word surrounded by double @ signs i.e. @@General@@ is to be substituted as appropriately defined:
 
 1. Type: One of "General Election", "Judicial Election", or "Special @@Position@@ Election.
-2. Position: One of "Delegate", "Vice Delegate", "Speaker", "Justice", or "Attorney General".
+2. Position: One of "Delegate", "Vice Delegate", "Attorney General", "Speaker", or "Justice".
 3. Month: the month during which the election begins.
 4. Year: the year during which the election begins.
 5. Label: For a scheduled election, the Month. For a special election, "Special Election".
@@ -18,10 +18,6 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 11. VotingOpen: the time voting opens as a UNIX timestamp.
 12. VotingClose: the time voting closes as a UNIX timestamp.
 13. Eligible: the list of persons eligible to run for at least one of the positions.
-14. NomCandidates: the list of valid candidates, each prefixed by [*] to itemize.
-15. Nominees: the list of persons nominated who are eligible but have not accepted nomination, each prefixed by [*] to itemize.
-16. DeclinedNominees: the list of persons nominated who are eligible but have declined the nomination.
-17. InvalidNominees: the list of persons nominated who are ineligible to run.
 18. Options: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".
 19. ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet.
 20. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
@@ -52,9 +48,9 @@ Below is a template which covers these questions:
 ```
 [center][big][b]Candidacy Declarations: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
+[img]https://the-north-pacific.github.io/Election-Templates/images/ec_seal.png[/img][/center]
 
-This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[and]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]][[,]] [[and]] [[an Attorney General]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
+This @@Label@@, The North Pacific will be electing [[a Delegate,]] [[a]] [[Vice Delegate,]] [[an]] [[Attorney General]] [and]] [[a]] [[Speaker,]] [[#]][[a]] [[Justice]][[s]] to serve until the next election in [[NextSched]]. Any Citizen who has been a member for the last 15 days (since @@EligibilityDate@@) is eligible to run for these offices [[excepting that @@TermLimitedDelegate@@ is unable to run for Delegate due to term limitations]], and eligible members may run for more than one of these offices if they so wish. Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election. [[A list of those eligible to run is provided below.]]
 
 To run, one must either accept a nomination or declare candidacy [u]in this thread[/u]. To withdraw from running, one must post a withdrawal of candidacy in [u]this thread[/u]. 
 
@@ -63,12 +59,37 @@ Acceptances of nominations, declarations of candidacy, and withdrawals of candid
 This topic is intended for nominations, acceptances of nominations, declarations of candidacy, and withdrawals of candidacy; it may not be used for campaigning. Please keep in mind that lying about the election is election fraud, and that lying for any purpose is fraud.
 
 [[[spoiler=Eligible to run*]@@Eligible@@[/spoiler]*Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election.]]
-
-[b]Candidates:[/b][list=1]@@NomCandidates@@[/list]
-[b]Nominees:[/b][list=1]@@Nominees@@[/list]
-[b]Declined Nomination:[/b][list=1]@@DeclinedNominees@@[/list]
-[b]Invalid Nominees:[/b][list=1]@@InvalidNominees@@[/list]
-
+[[
+[u]Delegate[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Vice Delegate[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Attorney General[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Speaker[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Justice[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]]
 [i]Election Commissioners: @@ElectionCommissioners@@[/i]
 ```
 
@@ -94,7 +115,7 @@ Below is a template which covers these matters:
 ```
 [center][big][b]Voting: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
+[img]https://the-north-pacific.github.io/Election-Templates/images/ec_seal.png[/img][/center]
 
 Voting [[is now open]][[opens at (time=@@VotingOpen@@)]] in this @@Type@@. Voting will be from (time=@@VotingOpen@@) (your forum time) to (time=@@VotingEnd@@) (your forum time), and ballots submitted outside that time are invalid. 
 
@@ -108,14 +129,14 @@ Public Voters must use the following voting form:
 [[[b]Vice Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
+[[[b]Attorney General:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
+
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Court Justice [[(select up to 3)]]:][/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
-
-[[[b]Attorney General:[/b] < @@Options@@ >]]
-[[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
 
 [[[b][color=red]Abstain is a candidate in this election. If you wish to abstain from voting you must use the option of PRESENT.[/color][/b]]]
 
@@ -129,13 +150,13 @@ Voters may submit their ballots either publicly by a post in this thread, or thr
 [[[b]Vice Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
+[[[b]Attorney General:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Court Justice [[(select 3)]]:[/b] < @@Options@@ >]]
-[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
-
-[[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code][/spoiler]
 
 Ballots not submitted according to these guidelines are invalid. Ambiguous votes are invalid.
@@ -163,13 +184,13 @@ Private ballot:
 [[[b]Vice Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
+[[[b]Attorney General:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Court Justice [[(select up to 3)]]:[/b] < @@Options@@ >]]
-[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
-
-[[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/quote]
 ```
 
@@ -200,13 +221,13 @@ If you have not already voted, the Election Commission would like to encourage y
 [[[b]Vice Delegate:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
+[[[b]Attorney General:[/b] < @@Options@@ >]]
+[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
+
 [[[b]Speaker:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
 
 [[[b]Court Justice [[(select 3)]]:[/b] < @@Options@@ >]]
-[[[b]Would you like to reopen nominations?[/b] < Yes | No >]]
-
-[[[b]Attorney General:[/b] < @@Options@@ >]]
 [[[b]Would you like to reopen nominations?[/b] < Yes | No >]][/code]
 
 The more votes, the stronger democracy is in The North Pacific. Thank you for voting!
@@ -282,7 +303,7 @@ Below is a template which covers these questions:
 ```
 [center][big][b]Results: @@Month@@ @@Year@@ @@Type@@[/b][/big]
 
-[img]http://z2.ifrm.com/10711/28/0/p1090273/ec_seal.png[/img][/center]
+[img]https://the-north-pacific.github.io/Election-Templates/images/ec_seal.png[/img][/center]
 
 The Election Commission has counted the votes in this @@Type@@ and now publishes these results, attesting they are true and correct.
 
@@ -290,9 +311,9 @@ The Election Commission has counted the votes in this @@Type@@ and now publishes
 
 [[[table=3,Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
 [[[table=3,Vice Delegate, 1]Candidates[c]Votes[c]Elected[/table]]]
+[[[table=3,Attorney General, 1]Candidates[c]Votes[c]Elected[/table]]]
 [[[table=3,Speaker, 1]Candidates[c]Votes[c]Elected[/table]]]
 [[[table=3,Court Justice, 1]Candidates[c]Votes[c]Elected[/table]]]
-[[[table=3,Attorney General, 1]Candidates[c]Votes[c]Elected[/table]]]
 
 [[A detailed breakdown of votes and results can be found in [url=@@SpreadsheetLink@@]this spreadsheet[/url].]]
 
