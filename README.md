@@ -18,10 +18,6 @@ In all the below templates, a word surrounded by double @ signs i.e. @@General@@
 11. VotingOpen: the time voting opens as a UNIX timestamp.
 12. VotingClose: the time voting closes as a UNIX timestamp.
 13. Eligible: the list of persons eligible to run for at least one of the positions.
-14. NomCandidates: the list of valid candidates, each prefixed by [*] to itemize.
-15. Nominees: the list of persons nominated who are eligible but have not accepted nomination, each prefixed by [*] to itemize.
-16. DeclinedNominees: the list of persons nominated who are eligible but have declined the nomination.
-17. InvalidNominees: the list of persons nominated who are ineligible to run.
 18. Options: the list of candidates followed by "Abstain" or "Present" if Abstain is a candidate in this election, separated by " | ".
 19. ChartURL: The URL of a pie chart image for election results, obtainable from an election counting spreadsheet.
 20. CandidateVotes: the row in the results sheet's appropriate table for the candidate, prefixed by "[c]", for each candidate, concatenated.
@@ -63,12 +59,37 @@ Acceptances of nominations, declarations of candidacy, and withdrawals of candid
 This topic is intended for nominations, acceptances of nominations, declarations of candidacy, and withdrawals of candidacy; it may not be used for campaigning. Please keep in mind that lying about the election is election fraud, and that lying for any purpose is fraud.
 
 [[[spoiler=Eligible to run*]@@Eligible@@[/spoiler]*Loss of Citizenship before the conclusion of this election will also result in loss of eligibility to run for any office during this election.]]
-
-[b]Candidates:[/b][list=1]@@NomCandidates@@[/list]
-[b]Nominees:[/b][list=1]@@Nominees@@[/list]
-[b]Declined Nomination:[/b][list=1]@@DeclinedNominees@@[/list]
-[b]Invalid Nominees:[/b][list=1]@@InvalidNominees@@[/list]
-
+[[
+[u]Delegate[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Vice Delegate[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Attorney General[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Speaker[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]][[
+[u]Justice[/u]
+[b]Candidates:[/b][list=1][*]-[/list]
+[b]Nominees:[/b][list=1][*]-[/list]
+[b]Declined Nomination:[/b][list=1][*]-[/list]
+[b]Invalid Nominees:[/b][list=1][*]-[/list]
+]]
 [i]Election Commissioners: @@ElectionCommissioners@@[/i]
 ```
 
