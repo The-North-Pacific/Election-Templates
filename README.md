@@ -211,7 +211,7 @@ Hi there!
 
 This is a reminder that the  @@Month@@ @@Year@@ @@Type@@ is currently underway. Voting has begun on (time=@@VotingOpen@@) (your forum time) and will continue until (time=@@VotingEnd@@) (your forum time).
 
-If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot, either publicly [url=@@Voting URL@@]here[/url], or by replying to this PM with the below ballot filled out with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] ballot ID number. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
+If you have not already voted, the Election Commission would like to encourage you to visit the following thread and submit your ballot, either publicly [url=@@Voting URL@@]here[/url], or through personal message to [url=https://forum.thenorthpacific.org/conversations/add?to=The%20Voting%20Booth]The Voting Booth[/url] with the below ballot filled out with a [url=https://www.random.org/integers/?num=1&min=1&max=10000&col=1&base=10&format=html&rnd=new]random[/url] ballot ID number. The ballot ID number will be posted together with your vote but with no reference to your identity so that you can verify that we posted your vote and any votes otherwise identical to yours, separately.
 
 [code][b]Ballot ID number:[/b] #
 
